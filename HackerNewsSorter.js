@@ -5,6 +5,7 @@
 // @description  Sorts all HackerNews entries by article points
 // @author       jamesrussell1911@gmail.com
 // @match        https://news.ycombinator.com/
+// @match        https://news.ycombinator.com/news?p=*
 // @grant        none
 // ==/UserScript==
 
