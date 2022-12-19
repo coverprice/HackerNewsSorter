@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sort Hacker News article list by points
 // @namespace    HN
-// @version      0.2
+// @version      0.3
 // @description  Sorts all HackerNews entries by article points
 // @author       jamesrussell1911@gmail.com
 // @match        https://news.ycombinator.com/
@@ -22,7 +22,7 @@
   }
 
   function findArticleTbody() {
-    return document.querySelector('.itemlist tbody');
+    return document.querySelector('#pagespace').nextElementSibling.querySelector("table tbody");
   }
 
   function findArticles(tbody) {
