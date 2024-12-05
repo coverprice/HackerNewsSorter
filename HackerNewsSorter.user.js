@@ -35,9 +35,9 @@
     };
     for(let el of tbody.children) {
       if(el.tagName === 'TR') {
-        if(el.className === 'athing') {
+        if(el.classList.contains('athing')) {
            result.articles.push([el]);
-        } else if(el.className === 'spacer') {
+        } else if(el.classList.contains('spacer')) {
           result.articles[result.articles.length-1].push(el);
         } else {
           if(el.textContent.includes(" ago")) {
